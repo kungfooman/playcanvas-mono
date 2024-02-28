@@ -1,0 +1,3 @@
+# generate this file: npm run build:example:data
+example-data.mjs
+dist
