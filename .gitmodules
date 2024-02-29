@@ -1,0 +1,3 @@
+[submodule "model-viewer"]
+	path = model-viewer
+	url = https://github.com/playcanvas/model-viewer/

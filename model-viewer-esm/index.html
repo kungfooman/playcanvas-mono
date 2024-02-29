@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PlayCanvas glTF Viewer</title>
+    <meta name="description" content="Fast and lightweight glTF 2.0 scene viewer powered by the PlayCanvas WebGL engine">
+    <meta name="keywords" content="glTF, GLB, WebGL, PlayCanvas, Viewer">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<!--
+  {{#hasPublicPath}}
+  <link rel="icon" type="image/png" href="/model-viewer/static/playcanvas-logo.png" />
+  <link rel="manifest" href="/model-viewer/static/manifest.json">
+  <link rel="stylesheet" href="/model-viewer/style.css" />
+  <script type="text/javascript">
+    if (/playcanvas\.com/.test(window.top.location.host)) {
+      document.write('<link rel="stylesheet" href="/model-viewer/fonts.css" />');
+    }
+  </script>
+  {{/hasPublicPath}}
+-->
+    <link rel="icon" type="image/png" href="../model-viewer/static/playcanvas-logo.png" />
+    <link rel="manifest" href="../model-viewer/static/manifest.json">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <a id='ar-link' rel='ar' download='asset.usdz'>
+      <img />
+    </a>
+    <div id='app'></div>
+    <script src="node_modules/qrious/dist/qrious.js"></script>
+    <script src="importmap.js"></script>
+    <script src="src/index.js" type="module"></script>
+  </body>
+</html>
