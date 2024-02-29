@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Container, Label, Button, TextInput } from 'pcui';
-import { getAssetPath } from '../helpers.js';
+import { getLogo } from '../helpers.js';
 const validUrl = (url) => {
     try {
         new URL(url);
@@ -48,7 +48,7 @@ const LoadControls = (props) => {
     return (React.createElement("div", { id: 'load-controls' },
         React.createElement(Container, { class: "load-button-panel", enabled: true, flex: true },
             React.createElement("div", { className: 'header' },
-                React.createElement("img", { src: getAssetPath('playcanvas-logo.png') }),
+                React.createElement("img", { src: getLogo() }),
                 React.createElement("div", null,
                     React.createElement(Label, { text: 'PLAYCANVAS MODEL VIEWER' })),
                 React.createElement(Button, { onClick: () => {

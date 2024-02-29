@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Container, Spinner } from 'pcui';
-import { getAssetPath } from '../helpers.js';
+import { getLogo } from '../helpers.js';
 import LeftPanel from './left-panel/index.js';
 import SelectedNode from './selected-node.js';
 import PopupPanel from './popup-panel/index.js';
@@ -34,10 +34,10 @@ class App extends React.Component {
             React.createElement(Container, { id: "panel-left", flex: true, resizable: 'right', resizeMin: 220, resizeMax: 800 },
                 React.createElement("div", { className: "header", style: { display: 'none' } },
                     React.createElement("div", { id: "title" },
-                        React.createElement("img", { src: getAssetPath('playcanvas-logo.png') }),
+                        React.createElement("img", { src: getLogo() }),
                         React.createElement("div", null, "PLAYCANVAS MODEL VIEWER"))),
                 React.createElement("div", { id: "panel-toggle" },
-                    React.createElement("img", { src: getAssetPath('playcanvas-logo.png') })),
+                    React.createElement("img", { src: getLogo() })),
                 React.createElement(LeftPanel, { observerData: this.state, setProperty: this._setStateProperty })),
             React.createElement("div", { id: 'canvas-wrapper' },
                 React.createElement("canvas", { id: "application-canvas", ref: this.canvasRef }),

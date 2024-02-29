@@ -1,5 +1,9 @@
 const __PUBLIC_PATH__ = '../model-viewer/'
 
+function getLogo() {
+    return __PUBLIC_PATH__ + 'static/playcanvas-logo.png';
+}
+
 /**
  * @param {string} assetPath
  * @returns {string}
@@ -14,7 +18,7 @@ function getAssetPath(assetPath) {
  */
 function getRootPath() {
     // @ts-ignore: path variable injected at build time
-    return (__PUBLIC_PATH__ ? './model-viewer/static' : '.');
+    return (__PUBLIC_PATH__ ? './model-viewer' : '.');
 }
 
 /**
@@ -91,4 +95,4 @@ const extract = (obj, paths) => {
     return result;
 };
 
-export { getAssetPath, getRootPath, addEventListenerOnClickOnly, extract };
+export { getLogo, getAssetPath, getRootPath, addEventListenerOnClickOnly, extract };

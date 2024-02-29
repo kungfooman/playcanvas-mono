@@ -15,13 +15,8 @@ import { PngExporter } from './png-exporter.js';
 import { ProjectiveSkybox } from './projective-skybox.js';
 import { ShadowCatcher } from './shadow-catcher.js';
 import { XRObjectPlacementController } from './xr-mode.js';
-
-// @ts-ignore
-//import arModeImage from './svg/ar-mode.svg';
-// @ts-ignore
-//import arCloseImage from './svg/ar-close.svg';
-const arModeImage = "todo";
-const arCloseImage = "todo";
+const arModeImage  = {src: '../model-viewer/src/svg/ar-mode.svg'};
+const arCloseImage = {src: '../model-viewer/src/svg/ar-close.svg'};
 
 // model filename extensions
 const modelExtensions = ['gltf', 'glb', 'vox'];
