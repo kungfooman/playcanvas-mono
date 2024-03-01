@@ -6,7 +6,12 @@ import MonacoEditor, { loader } from "@monaco-editor/react";
 import { iframeHotReload, iframeRequestFiles, iframeResize } from './iframeUtils.mjs';
 import { removeRedundantSpaces } from './helpers/strings.mjs';
 
-loader.config({ paths: { vs: './modules/monaco-editor/min/vs' } });
+// Non-invasive way to support GitHub Pages limitations
+if (location.href.includes('github.io')) {
+    loader.config({ paths: { vs: './modules/monaco-editor/min/vs' } });
+} else {
+    loader.config({ paths: { vs: './node_modules/monaco-editor/min/vs' } });
+}
 
 function getShowMinimap() {
     let showMinimap = true;

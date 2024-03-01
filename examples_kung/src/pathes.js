@@ -1,5 +1,4 @@
 const href = location.href;
-
 /**
  * Motivation is to not hardcode asset paths and change it quickly all at once.
  * @example
@@ -9,11 +8,11 @@ const href = location.href;
  * @returns {string} The path to assets.
  */
 function getAssetPath() {
-    const i = href.indexOf("/examples/");
+    const i = href.indexOf("/examples_kung/");
     if (i === -1) { // npm run serve
         return '/static/assets/';
     }
-    return href.substring(0, i) + "/examples/assets/";
+    return href.substring(0, i) + "/examples_kung/assets/";
 }
 const assetPath = getAssetPath(); // eslint-disable-line @typescript-eslint/no-unused-vars
 
@@ -23,7 +22,7 @@ const assetPath = getAssetPath(); // eslint-disable-line @typescript-eslint/no-u
  * @returns {string} The path to playcanvas.d.ts.
  */
 function getPlayCanvasTypes() {
-    const i = href.indexOf("/examples/");
+    const i = href.indexOf("/examples_kung/");
     if (i === -1) { // npm run serve
         return '/playcanvas.d.ts';
     }
@@ -38,7 +37,7 @@ const pcTypes = getPlayCanvasTypes(); // eslint-disable-line @typescript-eslint/
  * @returns {string} The path to scripts.
  */
 function getScriptsPath() {
-    const i = href.indexOf("/examples/");
+    const i = href.indexOf("/examples_kung/");
     if (i === -1) { // npm run serve
         return '/static/scripts/';
     }
@@ -53,11 +52,11 @@ const scriptsPath = getScriptsPath(); // eslint-disable-line @typescript-eslint/
  * @returns {string} The path to iframe.
  */
 function getIframePath() {
-    const i = href.indexOf("/examples/");
+    const i = href.indexOf("/examples_kung/");
     if (i === -1) { // npm run serve
         return '/iframe/';
     }
-    return href.substring(0, i) + "/examples/src/iframe/";
+    return href.substring(0, i) + "/examples_kung/src/iframe/";
 }
 const iframePath = getIframePath(); // eslint-disable-line @typescript-eslint/no-unused-vars
 
@@ -68,11 +67,11 @@ const iframePath = getIframePath(); // eslint-disable-line @typescript-eslint/no
  * @returns {string} The path to ammo.
  */
 function getAmmoPath() {
-    const i = href.indexOf("/examples/");
+    const i = href.indexOf("/examples_kung/");
     if (i === -1) { // npm run serve
         return '/static/lib/ammo/';
     }
-    return href.substring(0, i) + "/examples/src/lib/ammo/";
+    return href.substring(0, i) + "/examples_kung/src/lib/ammo/";
 }
 const ammoPath = getAmmoPath(); // eslint-disable-line @typescript-eslint/no-unused-vars
 
@@ -83,11 +82,11 @@ const ammoPath = getAmmoPath(); // eslint-disable-line @typescript-eslint/no-unu
  * @returns {string} The path to basis.
  */
 function getBasisPath() {
-    const i = href.indexOf("/examples/");
+    const i = href.indexOf("/examples_kung/");
     if (i === -1) { // npm run serve
         return '/static/lib/basis/';
     }
-    return href.substring(0, i) + "/examples/src/lib/basis/";
+    return href.substring(0, i) + "/examples_kung/src/lib/basis/";
 }
 const basisPath = getBasisPath(); // eslint-disable-line @typescript-eslint/no-unused-vars
 
@@ -98,11 +97,11 @@ const basisPath = getBasisPath(); // eslint-disable-line @typescript-eslint/no-u
  * @returns {string} The path to draco.
  */
 function getDracoPath() {
-    const i = href.indexOf("/examples/");
+    const i = href.indexOf("/examples_kung/");
     if (i === -1) { // npm run serve
         return '/static/lib/draco/';
     }
-    return href.substring(0, i) + "/examples/src/lib/draco/";
+    return href.substring(0, i) + "/examples_kung/src/lib/draco/";
 }
 const dracoPath = getDracoPath(); // eslint-disable-line @typescript-eslint/no-unused-vars
 
@@ -113,11 +112,11 @@ const dracoPath = getDracoPath(); // eslint-disable-line @typescript-eslint/no-u
  * @returns {string} The path to glslang.
  */
 function getGlslangPath() {
-    const i = href.indexOf("/examples/");
+    const i = href.indexOf("/examples_kung/");
     if (i === -1) { // npm run serve
         return '/static/lib/glslang/';
     }
-    return href.substring(0, i) + "/examples/src/lib/glslang/";
+    return href.substring(0, i) + "/examples_kung/src/lib/glslang/";
 }
 const glslangPath = getGlslangPath(); // eslint-disable-line @typescript-eslint/no-unused-vars
 
@@ -128,11 +127,11 @@ const glslangPath = getGlslangPath(); // eslint-disable-line @typescript-eslint/
  * @returns {string} The path to twgsl.
  */
 function getTwgslPath() {
-    const i = href.indexOf("/examples/");
+    const i = href.indexOf("/examples_kung/");
     if (i === -1) { // npm run serve
         return '/static/lib/twgsl/';
     }
-    return href.substring(0, i) + "/examples/src/lib/twgsl/";
+    return href.substring(0, i) + "/examples_kung/src/lib/twgsl/";
 }
 const twgslPath = getTwgslPath(); // eslint-disable-line @typescript-eslint/no-unused-vars
 
@@ -143,10 +142,10 @@ const twgslPath = getTwgslPath(); // eslint-disable-line @typescript-eslint/no-u
  * @returns {string} The path to iframe.
  */
 function getThumbnailPath() {
-    const i = href.indexOf("/examples/");
+    const i = href.indexOf("/examples_kung/");
     if (i === -1) { // npm run serve
         return '/thumbnails/';
     }
-    return href.substring(0, i) + "/examples/dist/thumbnails/";
+    return href.substring(0, i) + "/examples_kung/dist/thumbnails/";
 }
 const thumbnailPath = getThumbnailPath(); // eslint-disable-line @typescript-eslint/no-unused-vars

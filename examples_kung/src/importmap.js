@@ -6,7 +6,7 @@ window.process = {
 const playcanvasEngineThis = document.currentScript.src + '/../../../';
 const playcanvasEngine = playcanvasEngineThis;
 // const playcanvasEngine = '/playcanvas-engine-jsdoc/';
-const nodeModules = playcanvasEngineThis + 'examples/node_modules/';
+const nodeModules = playcanvasEngineThis + 'examples_kung/node_modules/';
 // const nodeModules = playcanvasEngineThis + 'examples/node_modules/';
 const react = {
     'prop-types': nodeModules + 'react-es6/prop-types/index.js',
